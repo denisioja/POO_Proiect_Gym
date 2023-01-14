@@ -1,3 +1,0 @@
-C:/Users/Denis/Desktop/POO_Tema2/cmake-build-debug/CMakeFiles/POO_Tema2.dir
-C:/Users/Denis/Desktop/POO_Tema2/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Denis/Desktop/POO_Tema2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
