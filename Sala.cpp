@@ -85,7 +85,9 @@ void Sala::citire(std::istream &in) {
         std::cout << "Numar clienti: ";
         in >> nrClienti;
         for(int i = 0; i < nrClienti; i++) {
-            std::shared_ptr<Client> tempClient;
+            std::shared_ptr<Client> tempClient = std::make_shared<Client>();
+            //make_shared_ptr daca e
+            //shared_ptr e pentru clase care au derivate
             tempClient->citire(std::cin);
             clienti.push_back(tempClient);
         }
@@ -93,7 +95,7 @@ void Sala::citire(std::istream &in) {
         std::cout << "Numar aparatura: ";
         in >> nrAparatura;
         for(int i = 0; i<nrAparatura; i++) {
-            std::shared_ptr<Aparatura> tempApara;
+            std::shared_ptr<Aparatura> tempApara = std::make_shared<Aparatura>();
             tempApara->citire(std::cin);
             aparatura.push_back(tempApara);
         }
@@ -101,7 +103,7 @@ void Sala::citire(std::istream &in) {
         std::cout << "Numar produse: ";
         in >> nrProduse;
         for(int i = 0; i < nrProduse; i++) {
-            std::shared_ptr<Produs> tempProd;
+            std::shared_ptr<Produs> tempProd = std::make_shared<Produs>();
             tempProd->citire(std::cin);
             produse.push_back(tempProd);
         }
