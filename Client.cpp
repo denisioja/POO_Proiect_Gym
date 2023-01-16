@@ -56,9 +56,9 @@ void Client::citire(std::istream &in) {
     in >> nrProd;
 
     if(nrProd > 0){
-        std::cout << "Produse: ";
+        std::cout << "Produse: \n";
         for(int i = 0 ; i < nrProd; i++) {
-            std::shared_ptr<Produs> tempProdus;
+            std::shared_ptr<Produs> tempProdus = std::make_shared<Produs>();
             tempProdus->citire(std::cin);
             produse.push_back(tempProdus);
         }
