@@ -100,13 +100,13 @@ void Sala::citire(std::istream &in) {
             aparatura.push_back(tempApara);
         }
 
-        std::cout << "Numar produse: ";
-        in >> nrProduse;
-        for(int i = 0; i < nrProduse; i++) {
-            std::shared_ptr<Produs> tempProd = std::make_shared<Produs>();
-            tempProd->citire(std::cin);
-            produse.push_back(tempProd);
-        }
+//        std::cout << "Numar produse: ";
+//        in >> nrProduse;
+//        for(int i = 0; i < nrProduse; i++) {
+//            std::shared_ptr<Produs> tempProd = std::make_shared<Produs>();
+//            tempProd->citire(std::cin);
+//            produse.push_back(tempProd);
+//        }
     }
 }
 
