@@ -56,3 +56,4 @@ void Angajat::afisare(std::ostream &out) const {
 int Angajat::getSalariu() const {
     return salariu;
 }
+
