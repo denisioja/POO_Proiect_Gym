@@ -57,3 +57,4 @@ int Angajat::getSalariu() const {
     return salariu;
 }
 
+
